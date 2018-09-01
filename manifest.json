@@ -1,0 +1,23 @@
+{
+  "name": "un-password",
+  "author":"denolk",
+  "description": "simple way to reveal password inputs on chrome - for lazies",
+  "version": "1.0",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
