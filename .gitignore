@@ -1,5 +1,5 @@
 *.pem
-*.pfx
 *.crx
 *.zip
 /dist
+.DS_Store
