@@ -1,10 +1,24 @@
 // denolk
 // https://github.com/ozgend/un-password.git
 
-var pwdElements = document.querySelectorAll('[type=password]');
+var unp = {
+  elements: []
+};
 
-pwdElements.forEach(element => {
+var applyUnPassword = function () {
+  unp.elements = document.querySelectorAll('input[type=password]');
+  unp.elements.forEach(element => {
+    unPassword(element);
+  });
+}
+
+var unPassword = function (element) {
   element.ondblclick = function () {
     this.type = this.type === 'password' ? 'text' : 'password';
   }
-});
+}
+
+var observer = new MutationObserver(applyUnPassword);
+observer.observe(document.body, { childList: true, subtree: true });
+
+applyUnPassword();
