@@ -2,7 +2,7 @@
   "name": "un-password",
   "author": "denolk",
   "description": "simple way to reveal password inputs on chrome - for lazies",
-  "version": "1.0",
+  "version": "1.0.2",
   "icons": {
     "16": "icon-16.png",
     "32": "icon-32.png",
