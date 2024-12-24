@@ -1,5 +1,8 @@
-*.pem
-*.crx
-*.zip
-/dist
 .DS_Store
+.vscode/
+data/
+test/
+*.txt
+*.pem
+*.pub
+*.key
