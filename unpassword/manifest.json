@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "un-password",
+  "version": "1.0.3",
+  "author": "denolk",
+  "description": "simple way to reveal password inputs on chrome - for lazies",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "un-password@denolk.dev"
+    },
+    "gecko_android": {
+      "id": "un-password@denolk.dev"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "src/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "64": "icons/icon64.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  }
+}
